@@ -1,5 +1,9 @@
 {{page-title "LLLLinkTo"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<p>This is application!</p>
+
+{{#let (component "link-to" class='a b c') as |link|}}
+  {{#link "application"}}go to home{{/link}}
+{{/let}}
 
 {{outlet}}
